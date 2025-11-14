@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {"id": "Maskirovka", "type": "concept", "champ": "virtuel"},
+    {"id": "DARVO", "type": "concept", "champ": "virtuel"},
+    {"id": "Micro_ciblage_cognitif", "type": "action", "champ": "cognitif"},
+    {"id": "Déception_physique", "type": "action", "champ": "physique"},
+    {"id": "OPDEC", "type": "action", "champ": "cognitif"},
+    {"id": "Souveraineté_flux_données", "type": "EFR", "champ": "physique"},
+    {"id": "Contrôle_algorithmes", "type": "outil", "champ": "virtuel"},
+    {"id": "IA_generative", "type": "outil", "champ": "cognitif"},
+    {"id": "Cloud_souverain", "type": "outil", "champ": "physique"},
+    {"id": "DIME", "type": "doctrine"},
+    {"id": "PMESII", "type": "doctrine"},
+    {"id": "MICE", "type": "doctrine"},
+    {"id": "RASCLS", "type": "doctrine"},
+    {"id": "EFR_construction_perceptions", "type": "EFR", "champ": "cognitif"},
+    {"id": "EFR_maîtrise_information", "type": "EFR", "champ": "virtuel"},
+    {"id": "Campagne_russe_2016", "type": "exemple"},
+    {"id": "Campagne_chinoise_Taiwan", "type": "exemple"},
+    {"id": "Campagne_US_micro_ciblage", "type": "exemple"}
+  ],
+  "links": [
+    {"source": "Maskirovka", "target": "Déception_physique", "relation": "implique"},
+    {"source": "Déception_physique", "target": "Souveraineté_flux_données", "relation": "produit"},
+    {"source": "Souveraineté_flux_données", "target": "Contrôle_algorithmes", "relation": "facilite"},
+    {"source": "Contrôle_algorithmes", "target": "Micro_ciblage_cognitif", "relation": "implique"},
+    {"source": "OPDEC", "target": "EFR_construction_perceptions", "relation": "produit"},
+    {"source": "Micro_ciblage_cognitif", "target": "EFR_construction_perceptions", "relation": "produit"},
+    {"source": "IA_generative", "target": "Micro_ciblage_cognitif", "relation": "outil"},
+    {"source": "Cloud_souverain", "target": "Souveraineté_flux_données", "relation": "outil"},
+    {"source": "DIME", "target": "Micro_ciblage_cognitif", "relation": "cadre"},
+    {"source": "PMESII", "target": "Micro_ciblage_cognitif", "relation": "cadre"},
+    {"source": "MICE", "target": "Micro_ciblage_cognitif", "relation": "cadre"},
+    {"source": "RASCLS", "target": "Micro_ciblage_cognitif", "relation": "cadre"},
+    {"source": "Maskirovka", "target": "Campagne_russe_2016", "relation": "exemple"},
+    {"source": "Micro_ciblage_cognitif", "target": "Campagne_russe_2016", "relation": "exemple"},
+    {"source": "Micro_ciblage_cognitif", "target": "Campagne_chinoise_Taiwan", "relation": "exemple"},
+    {"source": "Micro_ciblage_cognitif", "target": "Campagne_US_micro_ciblage", "relation": "exemple"},
+    {"source": "DARVO", "target": "Micro_ciblage_cognitif", "relation": "implique"},
+    {"source": "Contrôle_algorithmes", "target": "EFR_maîtrise_information", "relation": "implique"},
+    {"source": "EFR_maîtrise_information", "target": "Micro_ciblage_cognitif", "relation": "facilite"}
+  ]
+}
